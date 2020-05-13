@@ -2,12 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <!-- <meta name="description" content="">
-  <meta name="author" content=""> -->
   <link rel="icon" href=" ">
   <title>Fitness - Free Bootstrap 4 Template</title>
 
@@ -25,9 +19,12 @@
   <!-- Font Awesome Style -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
+
+   
 </head>
 
 <body>
+  
   <div class="loader loader-bg">
     <div class="loader-inner ball-clip-rotate-pulse">
       <div></div>
@@ -135,7 +132,7 @@
     </div>
   </section>
 
-  <footer style="margin: 1% 0% 0% 0%">
+  <!-- <footer style="margin: 1% 0% 0% 0%">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -143,12 +140,14 @@
             &copy;
             <script type="text/javascript">document.write(new Date().getFullYear());</script> <a target="_blank" rel="nofollow"
               href="#"></a> &nbsp;&nbsp;Sairen Biopharma Pvt Ltd. All Rights Reserved.
-            <!-- <div class="col-sm-6 col-md-3 pull-right text-xs-right">Created with <i class="fa fa-heart"></i></div> -->
+           
           </div>
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
+  
+  <div id="footerID"> <!-- your header --> </div>
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -161,9 +160,14 @@
   <script src="js/nivo-lightbox.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/core.js"></script>
-
+  <script> 
+    $(function(){
+      $("#footerID").load("footer.html");
+    });
+  </script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  
 </body>
 
 </html>
